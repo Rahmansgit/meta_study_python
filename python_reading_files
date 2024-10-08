@@ -1,0 +1,25 @@
+# to open and read entire contents of the file:
+# 
+with open('text.txt','r') as file:
+  print(file.read())
+
+# control the section what to print it out using number of characters inside read function, example:
+
+with open('text.txt','r') as file:
+  print(file.read(10))
+
+# third option, only first line will get print:
+
+with open('text.txt','r') as file:
+  print(file.readline())
+
+# fourth option, only first line will get print:
+
+with open('newfile.txt','r') as file:
+  print(file.readlines())
+
+# using for loop
+
+with open('newfile.txt','r') as file:
+  for x in file:
+    print(x)
